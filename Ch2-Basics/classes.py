@@ -42,12 +42,10 @@ class Motorcycle(Vehicle):
 car1 = Car("gas")
 car2 = Car("electric")
 mc1 = Motorcycle("gas", True)
-vc1 = Vehicle("black")
 
 print(mc1.wheels)        # 3
 print(car1.enginetype)   # gas
 print(car2.doors)        # 4
-print(vc1.bodystyle)     # black
 
 car1.drive(30)           # Driving my gas car at 30
 car2.drive(40)           # Driving my electric car at 40
