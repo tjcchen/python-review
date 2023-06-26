@@ -1,5 +1,6 @@
 #
 # formatting time and date output
+# link: https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
 #
 
 from datetime import datetime
