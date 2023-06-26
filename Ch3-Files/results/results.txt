@@ -1,0 +1,15 @@
+List all files:
+-----------------------------
+files.py
+.DS_Store
+testzip.zip
+shell.py
+textfile.txt.bak
+newfile.txt
+ospathutils.py
+challenge_solution.py
+textfile.txt
+archive.zip
+challenge.py
+-----------------------------
+Total bytes: 18777 bytes

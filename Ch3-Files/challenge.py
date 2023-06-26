@@ -11,22 +11,29 @@ def main():
   # newpath = "result/results.txt"
   # if not path.exists(newpath):
   #   os.makedirs(newpath)
-  #
   # solution 2: 
-  os.mkdir("result")
-  myfile = open("result/results.txt", "w+")
-
+  
+  totalbytes = 0
+  
+  # create dir and open file for writing
+  os.mkdir("results")
+  resultsfile = open("results/results.txt", "w+")
+  
   # write file header
-  myfile.write("List all the files in current folder\n")
-  myfile.write("------------------------------------\n")
+  resultsfile.write("List all files:" + "\n")
+  resultsfile.write("-----------------------------\n")
   
   # write names to the file
-  for file in os.listdir("./"):
-    if path.isfile(file):
-      myfile.write(file + "\n")
+  for entry in os.listdir("./"):
+    if path.isfile(entry):
+      resultsfile.write(entry + "\n")
+      totalbytes += path.getsize(entry)
+  
+  resultsfile.write("-----------------------------\n")
+  resultsfile.write("Total bytes: " + str(totalbytes) + " bytes")
   
   # close the file when done
-  myfile.close()
+  resultsfile.close()
   
 if __name__ == "__main__":
   main()
